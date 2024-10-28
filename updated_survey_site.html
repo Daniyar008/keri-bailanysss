@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Презентация туралы кері байланыс</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #e9ecef; 
+            color: #495057; 
+        }
+        .survey-container { 
+            max-width: 600px; 
+            margin: 50px auto; 
+            background: #ffffff; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
+            transition: transform 0.3s; 
+        }
+        .survey-container:hover { 
+            transform: scale(1.02); 
+        }
+        h1 { 
+            color: #343a40; 
+            text-align: center; 
+        }
+        label { 
+            display: block; 
+            margin: 15px 0 5px; 
+            font-weight: bold; 
+        }
+        input[type="text"], textarea { 
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 15px; 
+            border: 1px solid #ced4da; 
+            border-radius: 5px; 
+            transition: border-color 0.3s; 
+        }
+        input[type="text"]:focus, textarea:focus { 
+            border-color: #80bdff; 
+            outline: none; 
+        }
+        input[type="radio"], input[type="checkbox"] { 
+            margin-right: 10px; 
+        }
+        button { 
+            background-color: #007bff; 
+            color: white; 
+            border: none; 
+            padding: 10px 15px; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            width: 100%;
+            transition: background-color 0.3s; 
+        }
+        button:hover { 
+            background-color: #0056b3; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="survey-container">
+        <h1>Презентация туралы кері байланыс</h1>
+        <form action="mailto:daniyarsyltangereev@gmail.com" method="post" enctype="text/plain">
+            <label for="info-rating">Презентацияның пайдалы болғандығы?</label>
+            <input type="radio" name="info-rating" value="1"> 1
+            <input type="radio" name="info-rating" value="2"> 2
+            <input type="radio" name="info-rating" value="3"> 3
+            <input type="radio" name="info-rating" value="4"> 4
+            <input type="radio" name="info-rating" value="5"> 5
+
+            <label for="interesting-topics">Қандай индустрия бағыты қызықты болды?</label>
+            <textarea id="interesting-topics" name="interesting-topics" rows="3"></textarea>
+
+            <label for="style-preference">Қазақстанның болашаққа деген индустриялану бағыттары сізге ұнады ма?</label>
+            <input type="radio" name="style-preference" value="yes"> Иә
+            <input type="radio" name="style-preference" value="no"> Жоқ
+
+            <label for="improvements">Қазақстан болашақта қандай бағытта дамығанын қалар едіңіз?</label>
+            <textarea id="improvements" name="improvements" rows="3"></textarea>
+
+            <label for="design-rating">Слайдтың дизайны қаншалықты түсінікті?</label>
+            <input type="radio" name="design-rating" value="1"> 1
+            <input type="radio" name="design-rating" value="2"> 2
+            <input type="radio" name="design-rating" value="3"> 3
+            <input type="radio" name="design-rating" value="4"> 4
+            <input type="radio" name="design-rating" value="5"> 5
+
+            <label for="design-suggestions">Болашаққа деген ойларыңыз бар ма?</label>
+            <textarea id="design-suggestions" name="design-suggestions" rows="3"></textarea>
+
+            <label for="overall-rating">Презентацияны жалпы бағалаңыз</label>
+            <input type="radio" name="overall-rating" value="1"> 1
+            <input type="radio" name="overall-rating" value="2"> 2
+            <input type="radio" name="overall-rating" value="3"> 3
+            <input type="radio" name="overall-rating" value="4"> 4
+            <input type="radio" name="overall-rating" value="5"> 5
+            <input type="radio" name="overall-rating" value="6"> 6
+            <input type="radio" name="overall-rating" value="7"> 7
+            <input type="radio" name="overall-rating" value="8"> 8
+            <input type="radio" name="overall-rating" value="9"> 9
+            <input type="radio" name="overall-rating" value="10"> 10
+
+            <label for="additional-comments">Қосымша пікірлеріңіз бар ма?</label>
+            <textarea id="additional-comments" name="additional-comments" rows="3"></textarea>
+
+            <button type="submit">Жіберу</button>
+        </form>
+    </div>
+
+</body>
+</html>
